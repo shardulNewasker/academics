@@ -1,0 +1,14 @@
+Question 6
+
+Which of the data structures is most suitable? Justify your answer.
+You must use time complexities as a basis for your justification.
+
+
+Ordered array and linked list is less efficient for insertion and deletion since it has time complexity of O(n).
+Hash Table has is less efficient due to insertion of O(n) at worst, because of resizing. Also it will not store 
+elements in a sorted order.
+
+AVL tree has the same time complexities as Heap, and it can also store items by priority however it allows for empty spaces
+and has to be rebalanced frequently. 
+Heap would be the most suitable. It has insertion and deletion of O(log n), and using a binary heap will print
+the elements in order of priority in O(n) time. It also uses memory efficiently due to complete heap property.

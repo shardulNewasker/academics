@@ -1,0 +1,10 @@
+Question 2
+
+Explain why the compilation error occurred and briefly describe how it
+can be fixed.
+
+An ADT implies that the user cannot know of the implementation and is only allowed to use the interface functions provided.
+In this case, the user tries to access the implementation file's struct graph, which returns an error 
+of "incomplete struct graph", since that data structure is only meant to be for the implementation file and is not defined in the
+interface file. Basically, this issue is because the user tried to access the implementation of the ADT which is forbidden.
+

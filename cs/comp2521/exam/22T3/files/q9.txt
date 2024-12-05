@@ -1,0 +1,9 @@
+Question 9
+
+Which data structure and algorithm would you use to solve the task?
+Justify your answer.
+
+I would use a weighted bidirectional graph data structure where the islands are the vertices and brigdes are the positive weighted
+edges. Then I will connect all islands with each other (max edges) and from there I will use a priority queue to sort the edges 
+and then use Kruskal's algorithm to construct a MST to get a minimum cost bridge-island system.
+

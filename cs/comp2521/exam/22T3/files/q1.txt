@@ -1,0 +1,23 @@
+Question 1
+
+What is the time complexity of the algorithm? Justify your answer.
+
+The base case is when size <= 4. 
+During winding part of the recursion, the problem is split into 2 parts and the function is called again to solve 
+subProblem 2 with size n - 4. The winding takes O(n). 
+When the base case is reached, the operation takes O(1) time. 
+During unwinding, the result is calculated in O(1) time and is returned. Unwinding takes O(n) time.
+Therefore total time = O(n + n) = O(n).
+
+Below is an example of my thinking:
+
+fnA(int n)
+  if (n <= 4):
+    operation in O(1)
+    return result
+  
+  subProblem 1 = elements n, n - 1, n - 2, n - 3 // O(1)
+  subProblem 2 = fnA(n - 4) // O(n)
+  combine subProblem1 & 2 to get result // O(1)
+
+return result

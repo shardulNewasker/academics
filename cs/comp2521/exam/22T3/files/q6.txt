@@ -1,0 +1,49 @@
+Question 6
+
+(a) Show the state of the array after the first four scans.
+
+(Replace the underlines with the array elements)
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]
+15   26   55    4   46   41    14   5   71   96    98   100
+
+(b) Show the state of the array after each pass of the algorithm. IDK WHAT BOTTOM UP MERGE SORT IS
+
+Initial state:
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]
+98   26   71   96   15   55   100   4   46   41    14    5
+
+After the first pass:
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]
+___  ___  ___  ___  ___  ___  ___  ___  ___  ___  ____  ____
+
+(Copy the above template as many times as needed)
+
+
+
+(c) Identify two important differences between radix sort and merge
+    sort.
+    Radix Sort: Uses Radix R to sort instead of values.
+                Is In Place
+    Merge Sort: Not in place, uses temp arrays to merge
+                Uses values for comparison.
+
+
+    Give one situation where radix sort would be more suitable than
+    merge sort.
+
+    Sorting strings. Radix sort can sort it by sorting it through last character, second last character ... 
+    all the way to first character. Merge sort cannot be used since it is only able to sort numbers.
+
+    Give one situation where merge sort would be more suitable than
+    radix sort.
+
+    Array of large Numbers with small Input size, e.g.
+    10110500, 19939599, 28942285, 3285345895
+    Radix sort would compare each digit of all numbers which is inefficent since there is lot of digits
+    whereas mergeSort will compare the values directly, which is more efficient in this case since
+    Max Num of digits >> input size. Radix sort will take much longer than Merge Sort.
+
+

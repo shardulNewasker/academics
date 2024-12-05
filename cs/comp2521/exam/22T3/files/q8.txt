@@ -1,0 +1,13 @@
+Question 8
+
+(a) What is the maximum number of words that could be contained in the
+    trie? Justify your answer.
+    
+
+
+(b) What is the minimum number of words that could be contained in the
+    trie? Justify your answer.
+
+    There are M nodes that are leaf nodes, i.e. M terminal nodes. Total number of words must at least end with M characters.
+    Therefore minimum number of words = M.
+

@@ -1,0 +1,24 @@
+Question 7
+
+(a) How many items are examined in searching for the key 42? Justify
+    your answer.
+42 will be stored at index 9. We need to know how many items will exist in index 9. We need to find all elements upto 42 
+such that x % 11 == 9. We have: 
+11*0 + 9 = .., 
+11*1 + 9 = .., 
+11*2 + 9 = .., 
+and finally 11*3 + 9 = 42. So there will be 4 items searched.
+
+
+(b) How many items are examined in searching for the key 111? Justify
+    your answer.
+111 will be stored in index 1. Using similar logic from (a), there will be 9 elements stored at index 1 (since it will go upto 11*9 + 1).
+Note that 111 itself won't be stored since only numbers 1 to 100 were inserted. Therefore 9 items will be examined.
+
+
+(c) What is the worst-case search cost after N total items have been
+    inserted? Justify your answer.
+
+From (b) we observe that for every 100 items inserted we will search through 9 items worst case. So worst case
+after N total items = ceil(N/100) * 9.
+

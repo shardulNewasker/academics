@@ -1,0 +1,31 @@
+Question 5
+
+(a) Describe and justify the steps you would take to determine which
+    sorting algorithm the program uses.
+
+Both Sorting algorithms are not stable so we cannot use stability property to distinguish them. However, Selection sort
+always has time complexity of O(n^2) regardless of input and median three quicksort has complexity of O(nlogn). We can
+time the algorithms with different input sizes to see how the time increases with respect to input sizes. If it has a 
+"relatively" linear increase in time, it will have time complextiy of O(nlogn), i.e. median three quicksort, else if it has
+rapid increase in time as input size increases, it will be selection sort. It is important to note that each input size 
+should be timed multiple times to ensure relaibility.
+
+
+(b) Is the sorting algorithm that the program uses stable? How confident
+    are you in your conclusion? Explain your answer.
+
+Stability refers to the relative positioning of key value pairs that are the same value. If an algorithm is stable it will 
+maintain the same key-value order. In this case, the algorithm IS STABLE because it maintains the order of key-value pairs 
+that are the same. We can see that through the following, which shows position of key value pairs of same value.
+
+Before Sorting:
+(2, 8) (2, 9) (2, 7)
+(4, 7) (4, 3) (4, 4)
+(5, 1) (5, 6) (5, 9)
+
+After Sorting:
+(2, 8) (2, 9) (2, 7)
+(4, 7) (4, 3) (4, 4)
+(5, 1) (5, 6) (5, 9)
+
+The positions of key-value pairs with same values are all maintained.

@@ -1,0 +1,24 @@
+Question 2
+
+What is the maximum input size that can be processed? Justify your
+answer.
+
+Ans: 23
+
+We first want to find how many inputs the normal computer can process in 10,000 days.
+
+1 day --> 2^10 
+2 day --> 2^10 * 2^1 = 2^11 = 11 inputs 
+4 day --> 2^10 * 2^2 = 2^12 = 12 inputs
+      .
+      .
+      .
+1 * 2^x day --> 2^10 * 2^x = 10 + x inputs
+where 2^x is approximately 10,000. (use calculator)
+2^13 day (~8000 days) --> 2^10 * 2^13 = 23 inputs
+2^14 day (~16,000 days) --> 2^10 * 2^14 = 24 inputs
+
+So we have that normal computer can proccess 23 input size in 8000 days (approx 10,000 days).
+
+Since 2nd computer is 10,000x faster, it will compute 23 input size in 1 day.
+
