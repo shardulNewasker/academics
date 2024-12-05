@@ -1,0 +1,17 @@
+Question 10
+
+Which of the listed data structures is most suitable? Justify your
+answer. You must use time complexities as a basis for your justification.
+
+Ordered array has Push and Pop of time O(n) which is inefficent. Deleting in range
+will also be O(n) since after deletion, you have to rearrange the ordered array.
+
+Ordered list will have Push and Pop of time O(n) which is inefficient, and removing in range will also be O(n)
+since you have to travel through the nodes to get to the starting node.
+
+Heap has Push and Pop of O(log n), since it has a BST structure as a min heap which is more efficinet than previous optoins.
+Removing in range will be O(R log n) where R is the range. This is because after each deletion, in worst case, the heap will be
+restructured by pushing a value to the height of the tree. 
+
+Hash table is the most suitable because it has insertion of O(1) (except for resizing which is O(n)). It can Pop in O(n)
+time and it can remove in range in O(R) time where R is the range.

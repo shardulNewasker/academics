@@ -1,0 +1,22 @@
+Question 1
+
+(a) What is the maximum input size that can be processed? Justify your
+    answer.
+
+Max input size = 10,000 for the faster computer. If it takes approx 2^n time to proccess n inputs with the normal computer, then
+for a computer which is 1000x faster it will take approx 2^(n/1000) time to proccess n inputs with faster computer. Using this, 
+and the fact that the normal computer can process 10 input size in 1 day, we want n such that 2^(n/1000) = 2^(10). Solving that 
+givesus n = 10,000. 
+
+
+(b) What are the time complexities of fnA() and fnB() in terms of a and
+    b? Justify your answer.
+
+fnA() time = O(b - a). This is because the base case is set at a == b. So each time fnA is called, if a != b it will increment a
+by 1 and recurse through the problem again. It will recurse b - a times until the gap between a and b is covered (i.e. a == b).
+
+fnB() time = O((b - a)^2). fnB() itself is called b - a times because the base case is the same as in fnA(). However, fnA() 
+is also called in every function call of fnB(), so the time complexity would be O((b - a) * (b - a)). Note that the value of a 
+in fnA() would not change the value of a in fnB() since we are not passing in pointer to original a as the argument.
+
+

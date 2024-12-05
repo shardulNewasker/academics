@@ -1,0 +1,28 @@
+Question 3
+
+(a) Which of the given sequences (A, B, C or D) would be produced by a
+    valid post-order traversal of the same tree? Explain your answer.
+
+Option B.
+
+A pre order traversal processes in order of: node, node->left, node->right. Because of the BST property that left child
+is less than parent and right child is bigger than parent we notice that 2 is the left most value of the subtree and 
+is left child of 7. We also see that 8 is the right child of 7. Now we consider that:
+
+A post order traversal processes in order of: node->left, node->right, node. So our first 3 nodes must be 2, 8, 7. This 
+eliminates all options except B since they have 2,7,8 instead of 2,8,7.
+
+(b)
+
+Value in the root node: 36
+
+Value in the left child (of the root): 32
+
+Value in the right child (of the root): 39
+
+(c) Give the rotations that are performed (if any) as a result of
+    inserting each value.
+After inserting 25: Rotate Right at 22
+After inserting 8: idk
+
+
